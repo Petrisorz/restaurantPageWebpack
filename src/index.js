@@ -1,10 +1,13 @@
 import _ from 'lodash';
 import './style.css';
+import Icon from'./backgrMiere.jpg' 
 import {createHeader} from './header.js';
 import { menuContentCreate, menuTitleCreate } from './menu';
 import { createAboutPageDetails } from './about';
 import { clearContentBox } from './clearContent';
 const contentBox = document.createElement('div');
+let poza = new Image();
+poza = Icon;
 contentBox.classList.add('content');
 contentBox.setAttribute('id','contentBox')
 document.body.appendChild(createHeader());
